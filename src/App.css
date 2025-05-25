@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.app-header h1 {
+  color: white;
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.app-header p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 30px 0;
+  font-size: 1.1rem;
+}
+
+.calculator {
+  background: #2d3748;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  max-width: 320px;
+  width: 100%;
+}
+
+.calculator-display {
+  background: #1a202c;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.display-value {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 300;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.calculator-keypad {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+}
+
+.input-keys {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.function-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.digit-keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.operator-keys {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #4a5568;
+  color: white;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.key-operator {
+  background: #ed8936 !important;
+}
+
+.key-equals {
+  background: #38a169 !important;
+}
+
+.key-clear, .key-clear-entry {
+  background: #e53e3e !important;
+}
+
+.key-0 {
+  grid-column: span 2;
+}
